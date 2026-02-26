@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/check-glab.sh || (echo '⚠ glab not found — attempting install...' >&2 && ${CLAUDE_PLUGIN_ROOT}/scripts/install-glab.sh >&2 && ${CLAUDE_PLUGIN_ROOT}/scripts/check-glab.sh)"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "If the command references 'glab' and glab is not installed (check PATH includes ~/.local/bin), remind the user to run /gitlab:setup first. Otherwise allow the command. $ARGUMENTS"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "gitlab-tools",
+  "owner": {
+    "name": "tanyagray",
+    "email": "tanyagray@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "A Claude Code marketplace providing GitLab integration plugins powered by the glab CLI",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "gitlab",
+      "source": "./plugins/gitlab",
+      "description": "Full GitLab integration for Claude Code sessions using the glab CLI. Provides skills for merge requests, issues, CI/CD pipelines, repository management, and automatic glab installation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "tanyagray"
+      },
+      "license": "MIT",
+      "keywords": ["gitlab", "glab", "merge-request", "ci-cd", "devops", "git"],
+      "category": "developer-tools",
+      "tags": ["gitlab", "cli", "devops", "version-control"]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "gitlab",
+  "description": "Full GitLab integration for Claude Code using the glab CLI. Install, configure, and use glab to manage merge requests, issues, CI/CD pipelines, and repositories directly from Claude Code sessions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tanyagray"
+  },
+  "homepage": "https://gitlab.com/gitlab-org/cli",
+  "license": "MIT",
+  "keywords": ["gitlab", "glab", "merge-request", "ci-cd", "devops"]
+}
