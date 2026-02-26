@@ -1,11 +1,11 @@
 {
-  "name": "git-hosting-tools",
+  "name": "tanyas-tools",
   "owner": {
     "name": "tanyagray",
     "email": "tanyagray@users.noreply.github.com"
   },
   "metadata": {
-    "description": "A Claude Code marketplace providing Git hosting integration plugins for GitLab and Bitbucket",
+    "description": "Tanya's Claude Code plugin marketplace",
     "version": "1.1.0",
     "pluginRoot": "./plugins"
   },
