@@ -1,12 +1,12 @@
 {
-  "name": "gitlab-tools",
+  "name": "tanyas-tools",
   "owner": {
     "name": "tanyagray",
     "email": "tanyagray@users.noreply.github.com"
   },
   "metadata": {
-    "description": "A Claude Code marketplace providing GitLab integration plugins powered by the glab CLI",
-    "version": "1.0.0",
+    "description": "Tanya's Claude Code plugin marketplace",
+    "version": "1.1.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -22,6 +22,19 @@
       "keywords": ["gitlab", "glab", "merge-request", "ci-cd", "devops", "git"],
       "category": "developer-tools",
       "tags": ["gitlab", "cli", "devops", "version-control"]
+    },
+    {
+      "name": "bitbucket",
+      "source": "./plugins/bitbucket",
+      "description": "Full Bitbucket Cloud integration for Claude Code sessions using the bbt CLI. Provides skills for pull requests, issues, pipelines, repository management, and automatic bbt installation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "tanyagray"
+      },
+      "license": "MIT",
+      "keywords": ["bitbucket", "bbt", "pull-request", "pipelines", "devops", "atlassian"],
+      "category": "developer-tools",
+      "tags": ["bitbucket", "cli", "devops", "version-control", "atlassian"]
     }
   ]
 }
