@@ -1,0 +1,11 @@
+{
+  "name": "bitbucket",
+  "description": "Full Bitbucket Cloud integration for Claude Code using the bbt CLI. Install, configure, and use bbt to manage pull requests, issues, pipelines, and repositories directly from Claude Code sessions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tanyagray"
+  },
+  "homepage": "https://codeberg.org/romaintb/bbt",
+  "license": "MIT",
+  "keywords": ["bitbucket", "bbt", "pull-request", "pipelines", "devops"]
+}

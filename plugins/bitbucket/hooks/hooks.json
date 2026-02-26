@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/check-bbt.sh || (echo '⚠ bbt not found — attempting install...' >&2 && ${CLAUDE_PLUGIN_ROOT}/scripts/install-bbt.sh >&2 && ${CLAUDE_PLUGIN_ROOT}/scripts/check-bbt.sh)"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "If the command references 'bbt' and bbt is not installed (check PATH includes ~/go/bin and ~/.local/bin), remind the user to run /bitbucket:setup first. Otherwise allow the command. $ARGUMENTS"
+          }
+        ]
+      }
+    ]
+  }
+}
