@@ -1,0 +1,10 @@
+{
+  "name": "aws-preview-deploy",
+  "description": "Generate AWS preview deployment infrastructure for per-PR ephemeral environments. Creates CloudFormation templates, GitHub Actions workflows, Dockerfile, and bootstrap IAM resources using App Runner, S3 + CloudFront, and ECR.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tanyagray"
+  },
+  "license": "MIT",
+  "keywords": ["aws", "preview", "deploy", "cloudformation", "app-runner", "cloudfront", "ecr", "github-actions"]
+}
